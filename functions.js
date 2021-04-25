@@ -24,6 +24,16 @@ const division = (dividendo, divisor) => {
   }
 }
 
+//6
+const tablaMultiplicar = (multiplicando, multiplicador) => {
+  if (multiplicador === undefined) return multiplicador = 10;
+  let table = []
+ for (let i = 0; i <= multiplicador; i++){
+   table.push(multiplicando * i)
+ }
+return table
+}
+
 //7
 const potencia = (base, exponente) => {
   return Math.pow(base, exponente)
@@ -37,6 +47,16 @@ const anidada = (a,b) => {
   return cuadrado(a) + cuadrado(b);
 }
 
+//9
+const cerosIzq = (num, totalLength) => {
+  var numStr = num.toString();
+  var numCeros = totalLength - numStr.length;
+  for (var i = 1; i <= numCeros; i++) {
+      numStr = "0" + numStr;
+  }
+  return numStr;
+}
+
 
 export{
   suma,
@@ -46,4 +66,7 @@ export{
   potencia,
   anidada,
   texto,  
+  tablaMultiplicar,
+  cerosIzq,
+  
 }
