@@ -31,7 +31,7 @@ test ('sum of squares', () => {
 });
 
 test ('text', () => {
-    expect (functions.texto('Helloword')).toMatch(/Helloword/);
+    expect (functions.texto('Helloworld')).toMatch(/Helloworld/);
 });
 
 test ('multiplication table', () => {
