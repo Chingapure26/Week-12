@@ -35,7 +35,7 @@ test ('text', () => {
 });
 
 test ('multiplication table', () => {
-    expect (functions.tablaMultiplicar(5,undefined)).toEqual([0,5,10,15,20,25,30,35,40,45,50]);
+    expect (functions.tablaMultiplicar(5)).toEqual([0,5,10,15,20,25,30,35,40,45,50]);
 });
 
 test ('multiplication table', () => {
